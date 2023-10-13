@@ -61,15 +61,47 @@ footer{
      margin-top: 0px;
      margin-bottom: 0px;
      display: inline-block;
-     margin-inline-start: 10px;
-     margin-inline-end: 130px;
+     /* margin-inline-start: 10px;
+     margin-inline-end: 130px; */
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+#nav{
+     padding: 8px;
+     position: absolute;
+     margin-top: calc(1em + 18px) !important;
+     background-color: rgb(245, 245, 245);
+     border: 1px solid #6e6e6e;
+     border-top: 0px !important;
+}
 .links{
-     display: block;
+     display: flex;
      text-align: center;
      margin: 15px 0;
      font-size: 20px;
+     flex-wrap: wrap;
+     flex-direction: column;
+     align-items: center;
+}
+.pages{
+     transition: 0.3s;
+     cursor: pointer;
+}
+.quote{
+     text-align: center;
+     padding: 5px;
+}
+.more_pages{
+
+}
+.activate_pages{
+
+}
+.disactivate_pages{
+     display: none;
+}
+.links a{
+     display: block;
+     margin: 15px 0 !important;
 }
 a{
      text-decoration: none;
@@ -152,4 +184,62 @@ aside{
 }
 .info_table tr{
      text-align: center;
+}
+
+
+@media screen and (max-width: 1050px) {
+     .title{
+          font-size: 12px;
+     }
+}
+@media screen and (max-width: 904px) {
+     .title{
+          font-size: 10px;
+     }
+}
+@media screen and (max-width: 830px) {
+     .title{
+          font-size: 12px;
+     }
+     .title .col{
+          width: 100%;
+          display: block;
+     }
+     .title .col h2{
+          margin: 0;
+     }
+     main{
+          margin-top: 203px;
+     }
+}
+@media screen and (max-width: 620px) {
+     .aside_background{
+          left: -160px;
+     }
+     aside{
+          position: fixed;
+          left: -160px;
+     }
+     .main_content{
+          padding: 0;
+          margin: 20px !important;
+          width: calc(100% - 40px)
+     }
+     header{
+          padding-left: 0px;
+          width: 100%;
+     }
+     .logo{
+          display: none;
+     }
+}
+@media screen and (max-width: 482px) {
+     .info_table{
+          max-width: none;
+          margin: 0;
+          margin-bottom: 1em;
+     }
+     main{
+          margin-top: 226px;
+     }
 }

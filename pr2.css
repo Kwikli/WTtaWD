@@ -39,6 +39,13 @@ footer input, footer textarea{
      border-bottom: 1px solid #000000;
      background-color: transparent;
      resize: none;
+     outline: none;
+}
+footer input:focus{
+     
+}
+.input_wrong{
+     border-bottom: 1px solid #ff0000 !important;
 }
 table{
      width: 750px;

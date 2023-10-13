@@ -53,19 +53,21 @@
                          <a href="https://www.instagram.com/kwikl_/"><img src="https://seeklogo.com/images/I/instagram-logo-A807AD378B-seeklogo.com.png" alt="inst"></a>
                          <a href="https://www.youtube.com/channel/UCc-v683XiT102I2YTzJrutg"><img src="https://www.svgrepo.com//show/13671/youtube.svg" alt="youtube"></a>
                          <a href="https://zp.edu.ua/"><img src="https://zp.edu.ua/images/emblems/bud-200X200.png" alt="zefk"></a>
-                         <form action="/" method="POST">
+                         <form action="" method="POST">
                               <input type="text" name="name" id="name" placeholder="Імя">
                               <input type="email" name="email" id="email" placeholder="Ел. пошта">
                               <input type="tel" name="number" id="number" placeholder="Телефон">
-                              <textarea name="text" id="text" cols="80" rows="2" placeholder="Повідомлення">
+                              <textarea name="text" id="text" cols="80" rows="2" placeholder="Повідомлення" onclick="Clear(text)">
                                    Повідомлення
                               </textarea>
-                              <button type="submit">Відправити</button>
+                              <br><b id="textareaid">Довжина повідомлення: 0</b>
+                              <button type="button" onclick="FormSubmit()">Відправити</button>
                          </form>
                     </div>
                </div>
           </div>
           
      </footer>
+     <script src="pr2.js"></script>
 </body>
 </html>
