@@ -1,19 +1,9 @@
-console.log('pr2.js');
-
-//const userName = document.querySelector('#name');
-// const userEmail = document.getElementById('email');
-// const userTel = document.getElementById('number');
-//const userMsg = document.getElementById('text');
+console.log('pr7.js');
 
 var userMsgText = false;
 var userNameb = false;
 var userEmailb = false;
 var userTelb = false;
-
-//userName.addEventListener('keyup',checkName);
-// userEmail.addEventListener('keyup', checkEmail);
-// userTel.addEventListener('keyup',checkTel);
-//userMsg.addEventListener('keyup', checkText);
 
 $("#name").keyup(function (event) { 
      if(!event.target.value || event.target.value.match(/\s/) || event.target.value.match(/\d/) || event.target.value.match(/[^A-Z][^А-Б]/i)){
