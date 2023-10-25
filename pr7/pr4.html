@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Lb 4-5 Main page</title>
+     <link rel="stylesheet" href="pr4.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+     <header>
+          <div class="title">
+               <div class="col">
+                    <img src="wikipedia-logo.png" alt="W" class="logo"> 
+                    <h2>Вікіпедія про Java</h2>
+               </div>
+               <div class="col">
+                    <h2>Лабораторна робота 4-5</h2>
+               </div>
+          </div>
+          <div class="more_pages links">
+               <div class="pages">
+                    Сторінки
+               </div>
+               <nav id="nav" class="links disactivate_pages">
+                    <a href="pr4.html" class="active_link">
+                         Головна сторінка
+                    </a>
+                    <a href="pr4history.html">
+                         Історія
+                    </a>
+                    <!-- <a href="pr4also.html">
+                         Див. також
+                    </a> -->
+                    <a href="pr4about.html">
+                         Примітки та література
+                    </a>
+               </nav>
+          </div>
+          
+     </header>
+     <main>
+          <div class="aside_background">   
+
+          </div>
+          <aside>
+               <div class="aside_content">
+                    <ul> Інструменти
+                         <li>
+                              <a href="#Java">Java</a>
+                         </li>
+                         <li>
+                              <a href="#Name">Назва</a>
+                         </li>
+                         <li>
+                              <a href="#Concept">Головні концепції</a>
+                         </li>
+                    </ul>
+               </div>
+          </aside>
+          <div class="main_content">
+               <div class="main_text">
+                    <H1 a id="Java">Java</H1></a>
+                    <hr>
+                         <table class="info_table">
+                              <tbody>
+                                   <tr>
+                                        <td colspan="2" style="text-align: center;">
+                                             <H2 style="margin: 10px 0;">Java</H2>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td colspan="2">
+                                             <img width="100%"  src="data:image/png;base64,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" alt="Java">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td>
+                                             Парадигма
+                                        </td>
+                                        <td>
+                                             об'єктно-орієнтована, структурна, імперативна
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td>
+                                             Дата появи
+                                        </td>
+                                        <td>
+                                             1995
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td>
+                                             Творці
+                                        </td>
+                                        <td>
+                                             Sun Microsystems, Oracle
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td>
+                                             Розробник
+                                        </td>
+                                        <td>
+                                             Oracle Corporation
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td>
+                                             Останній реліз
+                                        </td>
+                                        <td>
+                                             Java SE 19.0.1 (18 жовтня 2022; 11 місяців тому)
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td>
+                                             Система типізації
+                                        </td>
+                                        <td>
+                                             статична, сувора, безпечна, називна, явна
+                                        </td>
+                                   </tr>
+                              <tr>
+                                        <td>
+                                             Основні реалізації
+                                        </td>
+                                        <td>
+                                             віртуальні машини Java
+                                        </td>
+                              </tr>
+                              </tbody>
+                         </table>
+                    <p>
+                         <b>Java</b> (вимовляється Джава) — <b>об'єктно-орієнтована мова програмування</b>, випущена 1995 року компанією «Sun Microsystems» як основний компонент платформи Java. З 2009 року мовою займається компанія «Oracle», яка того року придбала «Sun Microsystems». В офіційній реалізації Java-програми компілюються у байт-код, який при виконанні інтерпретується <b>віртуальною машиною</b> для конкретної платформи.
+                    </p>
+                    <p>
+                         «Oracle» надає компілятор Java та <b>віртуальну машину</b> Java, які задовольняють специфікації Java Community Process, під ліцензією GNU General Public License.
+
+                         Мова значно запозичила синтаксис із <b>C</b> і <b>C++</b>  . Зокрема, взято за основу об'єктну модель С++, проте її модифіковано. Усунуто можливість появи деяких конфліктних ситуацій, що могли виникнути через помилки програміста та полегшено сам процес розроблення об'єктно-орієнтованих програм. Ряд дій, які в С/C++ повинні здійснювати програмісти, доручено віртуальній машині. <b>Передусім Java розроблялась як платформо-незалежна мова</b>, тому вона має менше низькорівневих можливостей для роботи з апаратним забезпеченням, що в порівнянні, наприклад, з C++ зменшує швидкість роботи програм. За необхідності таких дій Java дозволяє викликати підпрограми, написані іншими мовами програмування.
+                    </p>
+                    <p>
+                         Java вплинула на розвиток <b>J++</b>, що розроблялась компанією <b>«Microsoft»</b>. Роботу над J++ було зупинено через судовий позов «Sun Microsystems», оскільки ця мова програмування була модифікацією Java. Пізніше в новій платформі <b><u>«Microsoft»</u>.NET</b> випустили <u>J#</u>, щоб полегшити міграцію програмістів J++ або Java на нову платформу. З часом нова мова програмування С# стала основною мовою платформи, перейнявши багато чого з Java. J# востаннє включався в версію <b>Microsoft Visual Studio</b> 2005. Мова сценаріїв <b><u>JavaScript</u></b> має схожу із <b><u>Java</u></b> назву і синтаксис, але не пов'язана із Java.
+
+
+                    </p>
+                    <h1 a id="Name">Назва</h1></a>
+                    <hr>
+                    <p>Спочатку мова називалася Oak («дуб») і розроблялася Джеймсом Гослінгом для програмування побутових електронних пристроїв. Згодом вона була перейменована в Java і стала використовуватися для написання клієнтських застосунків і серверного програмного забезпечення. Названа на честь марки кави Java, яка, в свою чергу, отримала найменування однойменного острова (Ява), тому на офіційній емблемі мови зображена чашка з паркою кавою. Існує й інша версія походження назви мови, пов'язана з алюзією на каво-машину як приклад побутового устаткування, для програмування якого спочатку мова створювалася.
+                    </p>
+                    <h1 a id="Concept">Головні концепції</h1></a>
+                    <hr>
+                    <h2>Початкові цілі</h2>
+                    <p>У створенні мови програмування Java було п'ять початкових цілей:
+                    </p>
+                    <ul>
+                         <li>Синтаксис мови повинен бути «простим, об'єктно-орієнтовним та звичним».</li>
+                         <li>Реалізація має бути «безвідмовною та безпечною».</li>
+                         <li>Повинна зберегтися «незалежність від архітектури та переносність».</li>
+                         <li>Висока продуктивність виконання</li>
+                         <li>Мова має бути «інтерпретованою, багатопотоковою, із динамічним зв'язуванням модулів».</li>
+                    </ul>
+                    <h2>Платформа</h2>
+                    <p>Під «незалежністю від архітектури» мається на увазі те, що програма, написана на мові Java, працюватиме на будь-якій підтримуваній апаратній чи системній платформі <b>без змін у початковому коді та перекомпіляції</b>.
+
+                    </p><p>Цього можна досягти, компілюючи початковий Java код у <b>байт-код</b>, який є спрощеними машинними командами. Потім програму можна виконати на будь-якій платформі, що має встановлену <b>віртуальну машину</b> Java, яка інтерпретує байткод у код, пристосований до специфіки конкретної <b>операційної системи і процесора</b>. Зараз віртуальні машини Java існують для більшості процесорів і операційних систем.
+                    
+                    </p><p>Стандартні бібліотеки забезпечують загальний спосіб доступу до таких платформозалежних особливостей, як обробка <b>графіки, багатопотоковість та роботу з мережами</b>. У деяких версіях задля збільшення продуктивності JVM байт-код можна компілювати у машинний код до або під час виконання програми.
+                    
+                    </p><p>Основна перевага використання <b>байт-коду</b> — це портативність. Тим не менш, додаткові витрати на інтерпретацію означають, що інтерпретовані програми будуть майже завжди працювати повільніше, ніж скомпільовані у машинний код, і саме тому Java одержала репутацію «повільної» мови. Проте, цей розрив суттєво скоротився після введення декількох методів оптимізації у сучасних реалізаціях JVM.
+                    
+                    </p><p>Одним із таких методів є <b>just-in-time компіляція</b> (JIT), що перетворює байт-код Java у машинний під час першого запуску програми, а потім кешує його. У результаті така програма запускається і виконується швидше, ніж простий інтерпретований код, але ціною додаткових витрат на компіляцію під час виконання. Складніші віртуальні машини також використовують динамічну рекомпіляцію, яка полягає в тому, що віртуальна машина аналізує поведінку запущеної програми й вибірково рекомпілює та оптимізує певні її частини. З використанням динамічної рекомпіляції можна досягти більшого рівня оптимізації, ніж за статичної компіляції, оскільки динамічний компілятор може робити оптимізації на базі знань про довкілля періоду виконання та про <b>завантажені класи</b>. До того ж він може виявляти так звані гарячі точки (англ. hot spots) — частини програми, найчастіше внутрішні цикли, які займають найбільше часу при виконанні. JIT-компіляція та динамічна рекомпіляція збільшує швидкість Java-програм, не втрачаючи при цьому портативності.
+                    
+                    </p><p>Існує ще одна технологія оптимізації байткоду, широко відома як статична компіляція, або компіляція <b>ahead-of-time</b> (AOT). Цей метод передбачає, як і традиційні компілятори, безпосередню компіляцію у машинний код. Це забезпечує хороші показники в порівнянні з інтерпретацією, але за рахунок втрати переносності: скомпільовану таким способом програму можна запустити тільки на одній, цільовій платформі.
+                    
+                    </p><p>Швидкість офіційної віртуальної машини Java значно покращилася з моменту випуску ранніх версій, до того ж, деякі випробування показали, що продуктивність JIT-компіляторів у порівнянні зі звичайними компіляторами у машинний код майже однакова. Проте ефективність компіляторів не завжди свідчить про швидкість виконання скомпільованого коду, тільки ретельне тестування може виявити справжню ефективність у даній системі.
+                    
+                    
+                    <h2>Об'єктність</h2>
+                    <p>На противагу <b>C++</b>, Java є більш об'єктно-орієнтованою. Всі дані і дії групуються в класи <b>об'єктів</b>. Виключенням з повної об'єктності (як скажімо в <b>Smalltalk</b>) є примітивні типи (int, float тощо). Це було свідомим рішенням проєктувальників мови задля збільшення швидкості. Через це Java не вважається повністю об'єктно-орієнтовною мовою.
+
+                    </p><p>У Java всі об'єкти є похідними від головного об'єкта (він називається просто Object), з якого вони успадковують базову поведінку і властивості.
+
+                    </p><p>Хоча у C++ вперше стало доступне множинне <b>успадкування</b>, але у Java можливе тільки одинарне успадкування, завдяки чому виключається можливість конфліктів між членами класу (методи і змінні), які успадковуються від базових класів.
+                    </p>
+                    <h2>Безпека</h2>
+                    У намірах проєктувальників Java мала замінити <b>C++</b> — об'єктного наступника мови C.[9] Проєктувальники почали з аналізу властивостей C++, які є причиною найбільшого числа помилок, щоби створити просту, безпечну і безвідмовну мову програмування.
+
+                    В Java існує система винятків або ситуацій, коли програма зустрічається з неочікуваними труднощами, наприклад:
+                         <ul>
+                              <li>операції над елементом масиву поза його межами або над порожнім елементом</li>
+                              <li>читання з недоступного каталогу або неправильної адреси URL</li>
+                              <li>ввід недопустимих даних користувачем</li>
+                         </ul>     
+                         <p>Одна з особливостей концепції <b>віртуальної машини</b> полягає в тому, що помилки (виключення) не призводять до повного краху системи. Крім того, існують інструменти, які «приєднуються» до середовища періоду виконання і кожен раз, коли сталося певне виключення, записують інформацію з пам'яті для зневадження програми. Ці інструменти <b>автоматизованої обробки виключень</b> надають основну інформацію щодо виключень в програмах на Java.
+                    
+                         </p><p>Проте мову програмування Java не рекомендується використовувати в системах, збій в роботі яких може призвести до смерті, травм чи значних фізичних ушкоджень (наприклад, програмне забезпечення для керування атомними електростанціями, польотами, систем життєзабезпечення чи систем озброєння) через ненадійність програм, написаних на мові програмування Java (пункт ліцензії Microsoft 7.7.h).
+                         </p>
+                    <h2>Автоматичне керування пам'яттю</h2>
+                         <p>Java використовує автоматичний збирач сміття (GC - Garbage Collector) для керування пам'яттю під час життєвого циклу об'єкта. Програміст вирішує, коли створювати об'єкти, а віртуальна машина відповідальна за звільнення пам'яті після того, як об'єкт стає непотрібним. Коли до певного об'єкта вже не залишається посилань, збирач сміття може автоматично прибирати його із пам'яті. Проте, витік пам'яті все ж може статися, якщо код, написаний програмістом, має посилання на вже непотрібні об'єкти, наприклад на об'єкти, що зберігаються у діючих контейнерах.
+
+                         </p><p>Збирання сміття дозволене у будь-який час. В ідеалі воно відбувається під час бездіяльності програми. Збірка сміття автоматично форсується при нестачі вільної пам'яті в купі для розміщення нового об'єкта, що може призводити до кількасекундного зависання. Тому існують реалізації віртуальної машини Java з прибиральником сміття, спеціально створеним для програмування <b>систем реального часу</b>.
+
+                         </p><p>Java не має підтримки вказівників у стилі C/C++. Це зроблено задля безпеки й надійності, аби дозволити збирачу сміття переміщувати вказівникові об'єкти.
+                         </p>
+               </div>
+          </div>
+     </main>
+     <footer>
+          <div class="footer_content">
+               <a href="../pr3.html">Резюме Владислава Шрамко</a>
+          </div>
+          <div class="quote" id="quote">
+               Цитата:
+          </div>
+     </footer>
+     <script src="pr4-5.js"></script>
+</body>
+</html>
