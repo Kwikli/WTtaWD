@@ -14,10 +14,23 @@
 <style>
      a{
           color: aliceblue !important;
+          text-decoration: none;
      }
      a:hover{
           color: rgb(211, 211, 211) !important;
+          
      }
+     .active_link{
+          text-decoration: underline;
+     }
+     @media screen and (max-width: 500px) {
+             .table{
+               width: 100% !important;
+               float: none !important;
+               margin: 0 !important;
+               margin-bottom: 10px !important;
+             }                 
+     } 
 </style>
 
 <body class="">
@@ -26,46 +39,47 @@
                     <div class="col-2">
                          <img src="wikipedia-logo.png" alt="W" class="mx-3 logo img-fluid d-sm-block d-none" style="width: 100px;"> 
                     </div>
-                    <div class="col-5  d-flex flex-wrap justify-content-center">
+                    <div class="col-xl-5  d-flex flex-wrap justify-content-center">
                          <h2>Вікіпедія про Java</h2>
                     </div>
-                    <div class="col-5 justify-content-center d-flex flex-wrap">
+                    <div class="col-xl-5 justify-content-center d-flex flex-wrap">
                          <h2>Лабораторна робота 4-5</h2>
                     </div>
                </div>
-          <div class="container dropdown text-center py-1">
-               <a href="#" class="dropdown-toggle show fw-bold d-inline-block pe-auto text-bg-dark" data-bs-toggle="dropdown" aria-expanded="true">
-                    Сторінки
-               </a>
-               <ul class="dropdown-menu text-left p-2 bg-dark" data-bs-popper="static">
-                    <li>
-                         <a href="pr4.html" class="active_link text-left">
-                              Головна сторінка
-                         </a>
-                    </li>
-                    <li>
-                         <a href="pr4history.html" class="text-left">
-                              Історія
-                         </a> 
-                    </li>
-                    <li>
-                         <a href="pr4about.html">
-                              Примітки та література
-                         </a>
-                    </li>
-               </ul>
-
-
-               <!-- <nav class="dropdown-menu text-center" data-bs-popper="static">
-                    
-                    <a href="pr4history.html" class="text-left">
-                         Історія
-                    </a>
-                    <!-- <a href="pr4also.html">
-                         Див. також
-                    </a> -->
-                    
+          <div class=" text-center py-1">
+               <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                         <ul class="text-left p-2 bg-dark">
+                              <li>
+                                   <a href="pr4.html" class="active_link text-left p-3">
+                                        Головна сторінка
+                                   </a>
+                              </li>
+                              <li>
+                                   <a href="pr4history.html" class="text-left p-3">
+                                        Історія
+                                   </a> 
+                              </li>
+                              <li>
+                                   <a href="pr4about.html" class="text-left p-3">
+                                        Примітки та література
+                                   </a>
+                              </li>
+                         </ul>
+                    </div>
+                  </div>
+                  <nav class="navbar navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    </div>
+                  </nav>     
           </div> 
+
+
+          
+
      </header>
      
      <main>
